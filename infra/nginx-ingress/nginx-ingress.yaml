@@ -15,8 +15,6 @@ spec:
     targetRevision: 9.5.1
     helm:
       releaseName: nginx-ingress-controller
-      valueFiles:
-        - values.yaml
       values: |
         metrics:
           enabled: true
