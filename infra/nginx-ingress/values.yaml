@@ -1,3 +1,2 @@
 metrics:
-  serviceMonitor:
-    enabled: true
+  enabled: true
