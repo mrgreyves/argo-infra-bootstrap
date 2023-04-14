@@ -15,10 +15,8 @@ spec:
     targetRevision: 9.5.1
     helm:
       releaseName: nginx-ingress-controller
-      values: |
-        metrics:
-          serviceMonitor:
-            enabled: true
+      valueFiles:
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: nginx-ingress-controller
