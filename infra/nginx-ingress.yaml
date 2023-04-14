@@ -15,6 +15,9 @@ spec:
     targetRevision: 9.5.1
     helm:
       releaseName: nginx-ingress-controller
+      values: |
+        serviceMonitor:
+          enabled: true
   destination:
     server: https://kubernetes.default.svc
     namespace: nginx-ingress-controller
